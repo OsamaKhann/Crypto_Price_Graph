@@ -21,10 +21,6 @@ x1 = [0]
 y1 = [0]
 
 f, axx = plt.subplots(2)
-# fig = plt.gcf()
-# fig.show()
-# fig.canvas.draw()
-# plt.ylim([0, 2000000])
 
 
 # plot the price of crypto currency
@@ -40,9 +36,8 @@ def plot_values(to_symbol):
         axx[0].plot(x, y)
         axx[1].set_title(to_symbol + " Vs PKR, Last updated at: " + str(datetime.datetime.now()))
         axx[1].plot(x, y1)
-        # fig.canvas.draw()
-        plt.pause(10)
+        plt.pause(1)
 
 
-f, axes = plt.subplots(3)
+axes = plt.subplots(3)
 plot_values('BTC')
