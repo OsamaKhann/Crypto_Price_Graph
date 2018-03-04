@@ -39,5 +39,4 @@ def plot_values(to_symbol):
         plt.pause(1)
 
 
-axes = plt.subplots(3)
 plot_values('BTC')
